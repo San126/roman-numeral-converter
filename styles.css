@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --output-box-color: hsl(180, 100%, 69%);
+    --dark-blue-color: navy;
+    --display-color: hsl(240, 50%, 25%);
+}
+
+html,
+body {
+    font-family: Garamond, sans-serif;
+    font-size: 20px;
+    word-break: break-word;
+    background-color: var(--display-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+}
+
+fieldset {
+    border: none;
+    height: 100%;
+    padding: 25px;
+    margin: 10px 20px;
+}
+
+label {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--dark-blue-color);
+}
+
+.form {
+    color: FFBF00;
+    margin: auto 25px;
+    padding: 15px auto;
+    border: 3px solid #FFBF00;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    background-color: #FFBF00;
+}
+
+#number {
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    border: 5px solid gray;
+    border-radius: 7px;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-size: 30px;
+}
+
+#output {
+    display: none;
+    color: var(--display-color);
+    font-weight: bold;
+    background-color: var(--output-box-color);
+    border: 8px solid var(--output-box-color);
+    border-radius: 7px;
+    font-size: 2.5rem;
+    width: 90%;
+    max-width: 500px;
+    min-height: 77px;
+    margin-top: 25px;
+    padding: 15px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.error-message {
+    color: red !important;
+    font-size: 1.5rem !important;
+    background-color: hsl(0, 100%, 90%) !important;
+    border: 3px solid hsl(0, 60%, 50%) !important;
+    display: none;
+}
+
+#convert-btn {
+    color: whitesmoke;
+    display: block;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 30px auto 0px;
+    cursor: pointer;
+    background: linear-gradient(blue, var(--dark-blue-color));
+    font-size: 20px;
+}
